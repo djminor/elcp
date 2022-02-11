@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Language Translator</title>
+    </head>
+    <body>
+        <form>
+            Enter text to translate:<input type="text" id="textToTranslate" value=""><br><br>
+            Translation: <span id="translatedText">Empty</span>
+        </form>
+        <script>
+                document.getElementById("textToTranslate").addEventListener("keyup", function(event) {
+                    event.preventDefault();
+                    const url = "https://libretranslate.com/docs/#/translate/post_translate&q=" +
+                        document.getElementById("textToTranslate").value + "&source=en&target=es&format=text&api_key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
+                    fetch(url) 
+                        .then(function(response) {
+                            return response.json();
+                        }).then(function(json) {
+                            console.log(json);
+                            var translatedText;
+                            translatedText = json.translatedText;
+                            document.getElementById("translatedText").innerHTML = translatedText;
+                        })
+                    });
+        </script>
+    </body>
+</html>
