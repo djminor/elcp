@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+h2 {
+    padding-top: 10%;
+    padding-left: 3%;
+}
 .banner {
     width: 100%;
     color: #111;
@@ -261,6 +265,14 @@ a {
 }
 .home-img {
     width: 100%;
+}
+#userform {
+    display:flex;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+#language {
+    display: flex;
 }
 
 
