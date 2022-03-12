@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset='UTF-8'/>
+        <meta name='viewport'
+            content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
         <title>Language Translator</title>
+        <link rel='stylesheet' href="ELCP_stylesheet.css">
     </head>
     <body>
-        <form>
-            Enter text to translate:<input type="text" id="textToTranslate" value=""><br><br>
-            Translation: <span id="translatedText">Empty</span>
+        <header class='header'>
+            <a href="" class='logo'>ELCP: Future</a>
+            <input class='menu-btn' type='checkbox' id='menu-btn' />
+            <label class='menu-icon' for='menu-btn'><span class='navicon'></span></label>
+                <ul class='menu'>
+                <li><a class='home' href='index.html'>Home</a></li>
+                <li><a class='history' href='ELCP_history.html'>History</a></li>
+                <li><a class='future' href='#Future'><strong>Future</strong></a></li>
+                <li><a class='language' href='ELCP_login.html'>Login</a></li>
+                </ul>
+        </header>
+        <form id="userform">
+            Enter a sentence to detect the language:<input id="input" type="text" value="">
+            <input type="submit" value="Submit">
+            Language: <span id="language">Empty</span>
         </form>
-        <script>
-                document.getElementById("textToTranslate").addEventListener("keyup", function(event) {
-                    event.preventDefault();
-                    const url = "https://libretranslate.com/docs/#/translate/post_translate&q=" +
-                        document.getElementById("textToTranslate").value + "&source=en&target=es&format=text&api_key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx";
-                    fetch(url) 
-                        .then(function(response) {
-                            return response.json();
-                        }).then(function(json) {
-                            console.log(json);
-                            var translatedText;
-                            translatedText = json.translatedText;
-                            document.getElementById("translatedText").innerHTML = translatedText;
-                        })
-                    });
-        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="Translate.js"></script>
     </body>
 </html>
