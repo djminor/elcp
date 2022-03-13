@@ -3,8 +3,10 @@
     <div class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
         <li class="pure-menu-item"><a @click="select('Ponca')" href="#" class="pure-menu-link">Ponca</a></li>
-        <li class="pure-menu-item"><a @click="select('Spanish')" href="#" class="pure-menu-link">Spanish</a></li>
-        <li class="pure-menu-item"><a @click="select('Russian')" href="#" class="pure-menu-link">Russian</a></li>
+        <li class="pure-menu-item"><a @click="select('Scots Gaelic')" href="#" class="pure-menu-link">Scots Gaelic</a></li>
+        <li class="pure-menu-item"><a @click="select('Sesotho')" href="#" class="pure-menu-link">Sesotho</a></li>
+        <li class="pure-menu-item"><a @click="select('Chukot')" href="#" class="pure-menu-link">Chukot</a></li>
+        <li class="pure-menu-item"><a @click="select('Sesotho')" href="#" class="pure-menu-link">Low Saxon</a></li>
       </ul>
     </div>
     <WordList :dictionary="words" />

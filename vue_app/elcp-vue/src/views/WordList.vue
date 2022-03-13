@@ -3,8 +3,8 @@
     <div class="words">
         <div class="word" v-for="word in dictionary" :key="word.id">
             <div class="info">
-                <h1>{{word.nonEngWord}}</h1>
-                <h2>{{word.language}}</h2>
+                <h2>{{word.nonEngWord}}</h2>
+                <h3>{{word.language}}</h3>
                 <p>"{{word.translation}}"</p>
             </div>
         </div>
@@ -46,7 +46,6 @@ export default {
     background-color:aqua;
     color: #000;
     padding: 10px 30px;
-    height: fit-content;
-    width: fit-content;
+    height: 250px;
 }
 </style>
