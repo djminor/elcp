@@ -6,7 +6,7 @@
         <li class="pure-menu-item"><a @click="select('Scots Gaelic')" href="#" class="pure-menu-link">Scots Gaelic</a></li>
         <li class="pure-menu-item"><a @click="select('Sesotho')" href="#" class="pure-menu-link">Sesotho</a></li>
         <li class="pure-menu-item"><a @click="select('Chukot')" href="#" class="pure-menu-link">Chukot</a></li>
-        <li class="pure-menu-item"><a @click="select('Sesotho')" href="#" class="pure-menu-link">Low Saxon</a></li>
+        <li class="pure-menu-item"><a @click="select('Low Saxon')" href="#" class="pure-menu-link">Low Saxon</a></li>
       </ul>
     </div>
     <WordList :dictionary="words" />
