@@ -10,6 +10,12 @@
       </ul>
     </div>
     <WordList :dictionary="words" />
+    <div class='footer'>
+                <hr>
+                <p>Link to GitHub repo:</p>
+                <br>
+                <a href='https://github.com/djminor/elcp_dir.git'>elcp_dir github</a>
+    </div>
   </div>
 </template>
 <script>
