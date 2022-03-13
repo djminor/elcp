@@ -1,0 +1,52 @@
+<template>
+<div class="wrapper">
+    <div class="words">
+        <div class="word" v-for="word in dictionary" :key="word.id">
+            <div class="info">
+                <h1>{{word.nonEngWord}}</h1>
+                <h2>{{word.language}}</h2>
+                <p>"{{word.translation}}"</p>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+<script>
+export default {
+    name: "WordList",
+    props: {
+        dictionary: Array
+    },
+    data() {
+        return {
+            word: this.word
+        }
+    }
+}
+</script>
+<style scoped>
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.words {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.word {
+    margin: 10px;
+    margin-top: 50px;
+    width: 200px;
+}
+.info {
+    background-color:aqua;
+    color: #000;
+    padding: 10px 30px;
+    height: fit-content;
+    width: fit-content;
+}
+</style>

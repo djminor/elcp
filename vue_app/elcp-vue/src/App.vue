@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+    <h1>ELCP</h1>
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link>
+      <router-link to="/explore">Explore</router-link>
     </nav>
     <router-view />
   </div>
@@ -22,11 +23,17 @@ nav {
 }
 
 nav a {
+  float: left;
+  padding: 10px;
   font-weight: bold;
+  text-decoration: none;
   color: #2c3e50;
 }
-
+nav a :hover {
+  background-color: #2c3e50;
+}
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #FFF;
+  background-color: #000;
 }
 </style>
