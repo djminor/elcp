@@ -12,7 +12,7 @@
                 <hr>
                 <p>Link to GitHub repo:</p>
                 <br>
-                <a href='https://github.com/djminor/elcp_dir.git'>elcp_dir github</a>
+                <a href='https://github.com/djminor/elcp_dir.git'>elcp_vue github</a>
     </div>
   </div>
 </template>
