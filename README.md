@@ -1,0 +1,3 @@
+# elcp_dir
+
+This project is a work in progress and currently only has a working title, but the goal is to one day have a data center for all of the least-spoken languages in the world. I got the idea because my wife is a member of the Ponca Tribe of Nebraksa, an indigenous tribe located around Omaha, Nebraska. Unfortunately, only a handful of people speak her tribe's language fluently, and when I say a handful, I mean a handful. It is estimated that worldwide, more people fluently speak Klingon than Nebraskan Ponca. I want to change that so that she and so many other people have the opportunity to learn the language of their ancestors and thus feel closer to them. 
